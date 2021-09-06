@@ -1,6 +1,7 @@
 # action-workflow-matrix
 
 [![License](https://img.shields.io/github/license/bonddim/action-workflow-matrix)](https://github.com/bonddim/action-workflow-matrix/blob/main/LICENSE)
+[![](https://img.shields.io/github/workflow/status/bonddim/action-workflow-matrix/default/main?logo=github)](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_default.yml?query=branch%3Amain)
 
 GitHub action to generate build matrix from yaml file
 
@@ -102,10 +103,11 @@ jobs:
 ```
 
 Check other build examples:
-* [exclude](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_exclude.yml?query=branch%3Amain)
-* [include](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_include.yml?query=branch%3Amain)
-* [parameter](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_parameter.yml?query=branch%3Amain)
-* [ubuntu](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_ubuntu.yml?query=branch%3Amain)
+
+- [exclude](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_exclude.yml?query=branch%3Amain)
+- [include](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_include.yml?query=branch%3Amain)
+- [parameter](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_parameter.yml?query=branch%3Amain)
+- [ubuntu](https://github.com/bonddim/action-workflow-matrix/actions/workflows/test_ubuntu.yml?query=branch%3Amain)
 
 ## License
 
