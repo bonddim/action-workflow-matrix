@@ -19,5 +19,5 @@ outputs:
   matrix:
     description: 'Output generated matrix for workflow'
 runs:
-  using: 'node14'
+  using: 'node12'
   main: 'dist/index.js'
