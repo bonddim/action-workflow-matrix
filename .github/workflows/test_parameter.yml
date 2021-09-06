@@ -29,7 +29,7 @@ jobs:
         run: |
           echo "$MATRIX_CONTEXT"
           echo "Parameter from env: $FOO"
-          echo "Parameter from context: ${{ matrix.foo }}"
+          echo "Parameter from context with default: ${{ matrix.foo || 'undefined' }}"
         env:
           MATRIX_CONTEXT: ${{ toJSON(matrix) }}
           FOO: ${{ matrix.foo }}
