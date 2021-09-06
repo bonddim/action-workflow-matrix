@@ -11,7 +11,7 @@ matrix: &default
 ubuntu:
   matrix:
     <<: *default
-    os: ubuntu-latest
+    os: [ubuntu-latest]
 
 # Overwrite include
 include:
