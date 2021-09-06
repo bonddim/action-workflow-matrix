@@ -33,8 +33,9 @@ exclude:
       - os: windows-latest
         node: 14
 
-# Additional parameter
+# Additional parameters
 parameter:
   matrix:
     <<: *default
     experimental: [true]
+    foo: [bar]

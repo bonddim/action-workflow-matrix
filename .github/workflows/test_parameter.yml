@@ -26,6 +26,10 @@ jobs:
       matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
     steps:
       - name: Dump matrix context
-        run: echo "$MATRIX_CONTEXT"
+        run: |
+          echo "$MATRIX_CONTEXT"
+          echo "Parameter from env: $FOO"
+          echo "Parameter from context: ${{ matrix.foo }}"
         env:
           MATRIX_CONTEXT: ${{ toJSON(matrix) }}
+          FOO: ${{ matrix.foo }}
