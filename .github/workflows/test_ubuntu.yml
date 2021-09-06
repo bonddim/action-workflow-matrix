@@ -24,6 +24,7 @@ jobs:
       fail-fast: false
       matrix: ${{ fromJson(needs.matrix.outputs.matrix) }}
     steps:
-      - run: |
-          echo "node: ${{ matrix.node }}"
-          echo "os: ${{ matrix.os }}"
+      - name: Dump matrix context
+        run: echo "$MATRIX_CONTEXT"
+        env:
+          MATRIX_CONTEXT: ${{ toJSON(matrix) }}
