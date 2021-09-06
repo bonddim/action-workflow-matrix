@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "ncc build --minify --license licenses.txt",
-    "test": "node dist/index.js"
+    "test": "node index.js"
   },
   "keywords": [
     "actions",
