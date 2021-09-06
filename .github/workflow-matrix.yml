@@ -37,4 +37,4 @@ exclude:
 parameter:
   matrix:
     <<: *default
-    experimental: true
+    experimental: [true]
